@@ -17,7 +17,7 @@ class ShareViewController: SLComposeServiceViewController {
     }
     
     override func didSelectPost() {
-        let sharedSuiteName: String = "PUT APP GROUP HERE"
+        let sharedSuiteName: String = "group.com.tommymolto"
         let sharedDataKey: String = "SharedData"
         
         let extensionItem = extensionContext?.inputItems[0] as! NSExtensionItem

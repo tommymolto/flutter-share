@@ -9,11 +9,11 @@ import Flutter
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         GeneratedPluginRegistrant.register(with: self)
-        let sharedSuiteName: String = "PUT APP GROUP HERE"
+        let sharedSuiteName: String = "group.com.tommymolto"
         let sharedDataKey: String = "SharedData"
         
         let controller: FlutterViewController = window?.rootViewController as! FlutterViewController
-        let methodChannel = FlutterMethodChannel(name: "PUT BUNDLE ID HERE", binaryMessenger: controller.binaryMessenger)
+        let methodChannel = FlutterMethodChannel(name: "group.com.tommymolto", binaryMessenger: controller.binaryMessenger)
         
         methodChannel.setMethodCallHandler({
             (call: FlutterMethodCall, result: @escaping FlutterResult) -> Void in

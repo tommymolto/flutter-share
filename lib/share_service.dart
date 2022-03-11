@@ -27,7 +27,7 @@ class ShareService {
   /// Invoke a method on our platform, telling it to give us any shared data
   /// it has
   Future<String> getSharedData() async {
-    return await MethodChannel('com.tnorbury.flutterSharingTutorial')
+    return await MethodChannel('group.com.tommymolto')
             .invokeMethod("getSharedData") ??
         "";
   }
